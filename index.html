@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAJAR - Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">VIAJAR</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="video.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Nunca dejes de </h2> 
+      <h3>Explorar el Mundo</h3>
+      <p>Dentro de veinte años estarás más decepcionado de las cosas que no hiciste que de las que hiciste. Así que desata amarras y navega alejándote de los puertos conocidos. Aprovecha los vientos alisios en tus velas. Explora. Sueña. Descubre.</p>
+      <a href="#">Explorar</a>
+    </div>
+    <ul class="social">
+      <li><a href="https://www.linkedin.com/in/martinhasenbalg/" target="_blank"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="https://www.linkedin.com/in/martinhasenbalg/" target="_blank"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="https://www.linkedin.com/in/martinhasenbalg/" target="_blank"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Noticias</a></li>
+      <li><a href="#">Destinos</a></li>
+      <li><a href="https://www.linkedin.com/in/martinhasenbalg/" target="_blank">Contacto</a></li>
+    </ul>
+  </div>
+
+  <script>
+     const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+  </script>
+</body>
+</html>
